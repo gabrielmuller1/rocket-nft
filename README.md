@@ -1,7 +1,7 @@
 # RocketNFT
 ------------------
 
-https://rocketnft.vercel.app
+https://rocket-nft-phi.vercel.app/
 
 ## Screens of project
 ------------------
