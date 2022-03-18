@@ -1,0 +1,39 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.box1 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    z-index: 3;
+}
+
+.box2 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    z-index: 2;
+}
+
+.box3 {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: 70px;
+    z-index: 1;
+}
+
+.boxMain {
+    display: flex;
+    position: relative;
+}

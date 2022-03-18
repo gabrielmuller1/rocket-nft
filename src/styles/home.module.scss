@@ -1,0 +1,519 @@
+.nftContent {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 3rem;
+    max-width: 1120px;
+}
+
+.nftInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-bottom: 3rem;
+}
+
+.nftManyArtists {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 3px;
+    color: white;
+
+    .wrapperArtist {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .wrapperImgArtists {
+        // width: 100%;
+        height: 100px;
+        position: relative;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .img1 {
+            position: absolute;
+            left: 0px;
+            z-index: 3;
+        }
+        .img2 {
+            position: absolute;
+            left: 20px;
+            z-index: 2;
+        }
+        .img3 {
+            position: absolute;
+            left: 40px;
+            z-index: 1;
+        }
+        .img4 {
+            position: absolute;
+            left: 60px;
+            z-index: 0;
+        }
+    }
+}
+
+.nftTitle {
+    color: white;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    padding: 0 3rem;
+
+    span {
+        color: var(--color-logo);
+    }
+}
+
+.nftAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+
+    background-color: red;
+
+    p {
+        margin-right: 1rem;
+        color: white;
+        font-size: 13px;
+    }
+}
+
+.gridAstronauts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+
+    img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+
+        border: solid 1px white;
+    }
+}
+
+.infoSale {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+
+    .allInfoSaleNft {
+        display: flex;
+        flex-direction: column;
+        padding-right: 3rem;
+
+        border-right: 1px solid var(--subtitle-color);
+
+        span {
+            padding-top: 4rem;
+            font-size: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            position: relative;
+
+            strong {
+                font-size: 14px;
+                position: absolute;
+                bottom: -5px;
+                color: var(--subtitle-color);
+            }
+        }
+    }
+
+    .allDescriptionSaleNft {
+        div:first-child {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 1rem;
+            margin: 2rem 2rem;
+
+            span:first-child {
+                padding-right: 1rem;
+            }
+        }
+
+        img {
+            // height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+/// Popular of the week
+.popularOfTheWeek {
+    padding-top: 4rem;
+    max-width: 1120px;
+    margin: 0 auto;
+    h2 {
+        font-size: 2rem;
+        color: white;
+        span {
+            color: red;
+        }
+    }
+}
+
+.popularContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .popularLeft {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        border-right: 1px solid var(--subtitle-color);
+    }
+}
+
+.popularCard {
+    width: 250px;
+
+    h3 {
+        padding-top: 1rem;
+        color: white;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .popularCardTitle {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        h4 {
+            overflow: hidden;
+            color: white;
+            font-size: 0.85rem;
+        }
+
+        span {
+            color: red;
+        }
+
+        padding-bottom: 1rem;
+    }
+}
+
+.theBestArtistsContainer {
+    padding-top: 4rem;
+    max-width: 1120px;
+    margin: 0rem auto;
+
+    .title {
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 4rem;
+
+        span {
+            color: var(--color-logo);
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+        grid-gap: 30px;
+
+        .cardArtist {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 120px;
+            background: var(--subtitle-color);
+
+            h4 {
+                color: white;
+            }
+
+            span {
+                color: var(--color-logo);
+            }
+
+            > div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding-left: 2rem;
+            }
+
+            &:hover {
+                background: var(--color-logo);
+
+                span {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .moreArtists {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.2s;
+        padding: 2rem 0;
+
+        color: white;
+
+        img {
+            padding-left: 10px;
+        }
+
+        span:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+}
+
+.footer {
+    background: var(--card-color);
+
+    .contentFooter {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 2rem 0;
+
+        .titleFooter {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h4 {
+                font-size: 2rem;
+                color: white;
+
+                span {
+                    color: var(--color-logo);
+                }
+            }
+
+            img {
+                border: 1px solid red;
+                padding: 1rem 1rem;
+                background: var(--color-logo);
+            }
+        }
+
+        .menuFooter {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 3rem;
+
+            .columnOne {
+                font-size: 1.5rem;
+                color: white;
+
+                span {
+                    color: var(--color-logo);
+                }
+
+                .formInputEmail {
+                    padding-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                    input {
+                        padding: 0.7rem;
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+                        background-color: black;
+                        color: white;
+                    }
+                    button {
+                        padding: 0.5rem;
+                    }
+                }
+            }
+
+            .columnTwo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex: 1;
+
+                .optionsMenu {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    h4 {
+                        color: white;
+                    }
+
+                    span {
+                        color: var(--subtitle-color);
+                    }
+                }
+            }
+        }
+
+        .socialMedia {
+            padding-top: 4rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            strong {
+                color: var(--subtitle-color);
+            }
+
+            .optionsSocialMedia {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 20%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1141px) {
+    .nftContent {
+        padding: 0 2rem;
+    }
+
+    .nftInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nftManyArtists {
+        order: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .wrapperArtist {
+            text-align: center;
+            .wrapperImgArtists {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+    .nftImage {
+        order: -1;
+        padding-top: 3rem;
+    }
+
+    .nftTitle {
+        order: 0;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .nftManyArtists {
+        order: 1;
+        padding-right: 20px;
+    }
+
+    .nftAbout {
+        order: 2;
+        text-align: center;
+    }
+
+    .infoSale {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0 2rem;
+
+        .allDescriptionSaleNft {
+            div:first-child {
+                display: flex;
+                flex-direction: column;
+
+                span:first-child {
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    // polularOfTheWeek
+
+    .popularOfTheWeek {
+        text-align: center;
+        color: red;
+    }
+
+    .popularContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .popularLeft,
+        .popularRight {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            border: none;
+        }
+    }
+
+    .popularContent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // melhores artistas
+    .theBestArtistsContainer {
+        .grid {
+            padding: 0 2rem;
+        }
+    }
+
+
+    // footer
+    .footer {
+        .contentFooter {
+            padding: 0 2rem;
+
+            .menuFooter {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                .columnTwo {
+                    padding-top: 2rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
